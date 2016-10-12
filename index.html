@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SydWebVR logo</title>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <!--<script src="https://rawgit.com/ngokevin/aframe-look-at-component/master/dist/aframe-look-at-component.min.js"></script>-->
+  </head>
+  <body>
+    <a-scene>
+
+      <!-- Logo -->
+      <a-entity id="logo" position="0 0 0" rotation="0 0 0">
+
+        <!-- Sides -->
+        <!-- Back/Bottom -->
+        <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1" material="side: double" color="#c00" opacity="0.666"></a-plane>
+        <a-plane position="-0.5 0 0.5" rotation="0 90 0" width="1" height="1" material="side: double" color="#0c0" opacity="0.666"></a-plane>
+        <a-plane position="0 -0.5 0.5" rotation="90 0 90" width="1" height="1" material="side: double" color="#00c" opacity="0.666"></a-plane>
+        <!-- Front/Top -->
+        <!--<a-plane position="0 0 1" rotation="0 0 0" width="1" height="1" material="side: double" color="#333" opacity="0.666"></a-plane>-->
+        <!--<a-plane position="0.5 0 0.5" rotation="0 90 0" width="1" height="1" material="side: double" color="#333" opacity="0.666"></a-plane>-->
+        <!--<a-plane position="0 0.5 0.5" rotation="90 0 90" width="1" height="1" material="side: double" color="#333" opacity="0.666"></a-plane>-->
+
+        <!-- Brackets -->
+        <a-plane position="-0.333 0.5 0.5" rotation="90 0 90" width="1" height="0.333" material="side: double" color="#333" opacity="0.666"></a-plane>
+        <a-plane position="-0.333 0 1" rotation="0 0 0" width="0.333" height="1" material="side: double" color="#333" opacity="0.666"></a-plane>
+        <a-plane position="0.333 0 0.001" rotation="0 0 0" width="0.333" height="1" material="side: double" color="#333" opacity="0.666"></a-plane>
+        <a-plane position="0.333 -0.4999 0.5" rotation="90 0 90" width="1" height="0.333" material="side: double" color="#333" opacity="0.666"></a-plane>
+
+      </a-entity>
+
+      <a-entity position="3 0 3" rotation="0 45 0">
+        <a-camera look-controls wasd-controls></a-camera>
+      </a-entity>
+
+    </a-scene>
+  </body>
+</html>
